@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context="com.bawei.feng.jufan.ui.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#55ffffff"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/home_bt"
+            android:gravity="center"
+            android:onClick="showHome"
+            android:text="首页"
+            android:textColor="#d83a51"
+            android:textSize="10sp" />
+
+
+
+
+
+        <RadioButton
+            android:id="@+id/main_mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/mine_bt"
+            android:gravity="center"
+            android:onClick="showMe"
+            android:text="我的"
+            android:textColor="#d83a51"
+            android:textSize="10sp" />
+
+
+    </RadioGroup>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:onClick="myShow"
+        android:background="@mipmap/li_maintab_party_pic_selected" />
+
+</RelativeLayout>

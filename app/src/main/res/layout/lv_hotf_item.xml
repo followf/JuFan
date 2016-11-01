@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_big_lv_item"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:placeholderImage="@mipmap/li_default_head"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:roundedCornerRadius="5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@mipmap/li_home_hot_item_bg"
+        android:layout_alignTop="@+id/sdv_big_lv_item"
+        ></View>
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_small_lv_item"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:placeholderImage="@mipmap/li_default_head_small"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:roundedCornerRadius="180dp"
+        fresco:roundingBorderWidth="1dp"
+    fresco:roundingBorderColor="#c00"
+        />
+
+    <TextView
+        android:id="@+id/tvname_lv_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/sdv_small_lv_item"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+
+        />
+
+    <ImageView
+        android:id="@+id/iv_lv_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvname_lv_item"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/sdv_small_lv_item"
+        android:src="@mipmap/li_icon_home_location" />
+
+    <TextView
+        android:id="@+id/tvlocation_lv_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/iv_lv_item"
+        android:layout_alignBottom="@+id/iv_lv_item"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        />
+
+    <TextView
+        android:id="@+id/tvLive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textshape"
+        android:layout_alignTop="@+id/sdv_small_lv_item"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="#c00"
+        />
+
+
+</RelativeLayout>
